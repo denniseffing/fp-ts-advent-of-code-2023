@@ -1,15 +1,11 @@
-# fp-ts-playground
+<h1 align="center" style="border-bottom: none;">️🎅 Advent of Code 2023 🎄</h1>
+<h3 align="center">🧩 Advent of Code 2023 puzzles solved using fp-ts 🧩</h3>
 
-To install dependencies:
-
+## 🚀 Quickstart 
 ```bash
+# install dependencies
 bun install
+
+# run puzzles
+bun run day:one
 ```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.0.14. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
