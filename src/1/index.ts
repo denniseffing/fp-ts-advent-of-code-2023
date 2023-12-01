@@ -10,9 +10,10 @@ import * as NES from 'fp-ts-std/NonEmptyString';
 import * as R from 'fp-ts/Record';
 
 const pureLog =
+  (message: string) =>
   (x: number): IO.IO<number> =>
   () => {
-    console.log(x);
+    console.log(`${message} ${x}`);
     return x;
   };
 
@@ -64,7 +65,7 @@ export const part1 = pipe(
   RNEA.traverse(O.Applicative)(N.fromString),
   O.map(RA.sum),
   O.getOrElse(() => 0),
-  pureLog,
+  pureLog('Result of part 1:'),
 );
 
 export const part2 = pipe(
@@ -76,7 +77,7 @@ export const part2 = pipe(
   RNEA.traverse(O.Applicative)(N.fromString),
   O.map(RA.sum),
   O.getOrElse(() => 0),
-  pureLog,
+  pureLog('Result of part 2:'),
 );
 
 part1();
