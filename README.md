@@ -8,4 +8,5 @@ bun install
 
 # run puzzles
 bun run day:one
+bun run day:two
 ```
